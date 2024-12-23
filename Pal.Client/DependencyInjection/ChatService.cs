@@ -103,6 +103,7 @@ namespace Pal.Client.DependencyInjection
             if (Svc.ClientState.ClientLanguage == ClientLanguage.German) return @"^Ebene (\d+) betreten!";
             if (Svc.ClientState.ClientLanguage == ClientLanguage.French) return @"^Sous-sol (\d+)";
             if (Svc.ClientState.ClientLanguage == (ClientLanguage)4) return @"^地下(\d+)层";
+            if (Svc.ClientState.ClientLanguage == ClientLanguage.Korean) return @"^지하(\d+)층";
             throw new Exception("Invalid client language: " + Svc.ClientState.ClientLanguage);
 
         }
